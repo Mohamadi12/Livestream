@@ -1,4 +1,5 @@
 import React from 'react'
+import { Logo } from './_components/logo'
 
 type Props = {
     children: React.ReactNode
@@ -6,7 +7,10 @@ type Props = {
 
 const AuthLayout = ({children}: Props) => {
   return (
-    <div className='flex h-full items-center justify-center p-4'>{children}</div>
+    <div className='flex flex-col items-center justify-center h-full space-y-6'>
+      <Logo/>
+      {children}
+    </div>
   )
 }
 
