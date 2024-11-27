@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div className="flex flex-col gap-y-4">
       <h1>DAshboard</h1>
-      <UserButton afterSwitchSessionUrl='/'/>
+      <UserButton />
     </div>
   )
 }
